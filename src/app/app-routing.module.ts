@@ -6,6 +6,8 @@ import { LoginComponent } from './modules/authen/components/login/login.componen
 import { AboutComponent } from './modules/commun/components/about/about.component';
 import { OrdersComponent } from './modules/orders/components/orders/orders.component';
 import { AdminCoursesComponent } from './modules/admin/components/admin-courses/admin-courses.component';
+import { LoginService } from './modules/authen/services/login.service';
+import { AdminService } from './modules/admin/services/admin.service';
 
 
 const routes: Routes = [
@@ -28,11 +30,14 @@ const routes: Routes = [
   },
   {
     path:'orders',
-    component:OrdersComponent
+    component:OrdersComponent,
+    canActivate:[LoginService]
   },
   {
     path:'admin-courses',
-    component:AdminCoursesComponent
+    component:AdminCoursesComponent,
+    canActivate:[LoginService,AdminService]
+ 
   }
 
 ];
@@ -42,3 +47,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

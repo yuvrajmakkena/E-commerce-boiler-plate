@@ -14,7 +14,8 @@ import { AppModuleCommun } from './modules/commun/app.module';
 import { AppModuleCourses } from './modules/courses/app.module';
 import { AppModuleMenu } from './modules/menu/app.module';
 import { AppmoduleOrder } from './modules/orders/app.module';
-import { AdminCoursesComponent } from './modules/admin/components/admin-courses/admin-courses.component';
+import { AppmoduleUsers } from './modules/users/app.module';
+
 
 
 
@@ -36,6 +37,7 @@ import { AdminCoursesComponent } from './modules/admin/components/admin-courses/
     AppModuleCourses,
     AppModuleMenu,
     AppmoduleOrder,
+    AppmoduleUsers
     
     
   ],

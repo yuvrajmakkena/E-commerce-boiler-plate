@@ -9,7 +9,7 @@ declarations:[
 ],
 imports:[],
 exports:[
-
+    AdminCoursesComponent
 ],
 providers:[],
 bootstrap:[]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../services/login.service';
-import * as firebase from 'firebase';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,7 +12,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  onLogin(){
-    this.login.loginwithGoogle();
+  onLogin()
+  {
+     this.login.loginWithGoogle();
   }
+
+
 }
